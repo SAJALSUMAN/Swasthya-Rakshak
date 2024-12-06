@@ -1,0 +1,51 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <!-- Logo Image -->
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/swasthyarakshaklogo" />
+
+    <!-- Motivational Health Quote -->
+    <TextView
+        android:id="@+id/tv_health_quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_logo"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="“Health is wealth, take care of it today for a better tomorrow.”"
+        android:textSize="18sp"
+        android:textColor="#388E3C"
+    android:textStyle="bold|italic"
+    android:padding="16dp"
+    android:fontFamily="sans-serif-medium"
+    android:gravity="center"
+    android:maxWidth="280dp"
+    android:lineSpacingExtra="8dp"
+    android:textAlignment="center"
+    android:background="#f0f0f0"
+    android:layout_marginBottom="20dp" />
+
+
+    <!-- Start Button -->
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
+        android:background="#2D0461"
+        android:padding="12dp"
+        android:text="Start"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+</RelativeLayout>

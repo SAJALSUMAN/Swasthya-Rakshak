@@ -34,7 +34,7 @@
             android:textSize="16sp"
             android:background="#f0f0f0"
             android:textColor="#000000"
-            android:textColorHint="#000000"/>
+            android:textColorHint="#000000" />
 
         <EditText
             android:id="@+id/input_temperature"
@@ -47,7 +47,7 @@
             android:textSize="16sp"
             android:background="#f0f0f0"
             android:textColor="#000000"
-            android:textColorHint="#000000"/>
+            android:textColorHint="#000000" />
 
         <EditText
             android:id="@+id/input_sugar"
@@ -60,7 +60,7 @@
             android:textSize="16sp"
             android:background="#f0f0f0"
             android:textColor="#000000"
-            android:textColorHint="#000000"/>
+            android:textColorHint="#000000" />
 
         <EditText
             android:id="@+id/input_weight"
@@ -73,7 +73,7 @@
             android:textSize="16sp"
             android:background="#f0f0f0"
             android:textColor="#000000"
-            android:textColorHint="#000000"/>
+            android:textColorHint="#000000" />
 
         <EditText
             android:id="@+id/input_height"
@@ -86,7 +86,7 @@
             android:textSize="16sp"
             android:background="#f0f0f0"
             android:textColor="#000000"
-            android:textColorHint="#000000"/>
+            android:textColorHint="#000000" />
 
         <EditText
             android:id="@+id/input_oxygen"
@@ -94,12 +94,40 @@
             android:layout_height="wrap_content"
             android:hint="Oxygen Level (%)"
             android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:background="#f0f0f0"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <!-- Optional Input: ESR -->
+        <EditText
+            android:id="@+id/input_esr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ESR (mm/hr) - Optional"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:background="#f0f0f0"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <!-- Optional Input: Hemoglobin -->
+        <EditText
+            android:id="@+id/input_hemoglobin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hemoglobin Level (g/dL) - Optional"
+            android:inputType="numberDecimal"
             android:layout_marginBottom="24dp"
             android:padding="12dp"
             android:textSize="16sp"
             android:background="#f0f0f0"
             android:textColor="#000000"
-            android:textColorHint="#000000"/>
+            android:textColorHint="#000000" />
 
         <Button
             android:id="@+id/btn_submit"
@@ -114,3 +142,4 @@
 
     </LinearLayout>
 </ScrollView>
+

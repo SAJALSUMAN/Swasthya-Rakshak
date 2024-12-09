@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class activity_vital_signs extends AppCompatActivity {
 
-    private EditText inputBP, inputTemp, inputSugar, inputWeight, inputHeight, inputOxygen;
+    private EditText inputBP, inputTemp, inputSugar, inputWeight, inputHeight, inputOxygen, inputESR, inputHemoglobin;
     private Button btnSubmit;
 
     @Override
@@ -26,6 +26,8 @@ public class activity_vital_signs extends AppCompatActivity {
         inputWeight = findViewById(R.id.input_weight);
         inputHeight = findViewById(R.id.input_height);
         inputOxygen = findViewById(R.id.input_oxygen);
+        inputESR = findViewById(R.id.input_esr); // Optional
+        inputHemoglobin = findViewById(R.id.input_hemoglobin); // Optional
         btnSubmit = findViewById(R.id.btn_submit);
 
         // Handle Submit button click
@@ -40,6 +42,8 @@ public class activity_vital_signs extends AppCompatActivity {
                     intent.putExtra("weight", inputWeight.getText().toString());
                     intent.putExtra("height", inputHeight.getText().toString());
                     intent.putExtra("oxygen", inputOxygen.getText().toString());
+                    intent.putExtra("esr", inputESR.getText().toString()); // Pass optional ESR
+                    intent.putExtra("hemoglobin", inputHemoglobin.getText().toString()); // Pass optional Hemoglobin
                     startActivity(intent);
                 }
             }
@@ -53,9 +57,10 @@ public class activity_vital_signs extends AppCompatActivity {
                 TextUtils.isEmpty(inputWeight.getText().toString()) ||
                 TextUtils.isEmpty(inputHeight.getText().toString()) ||
                 TextUtils.isEmpty(inputOxygen.getText().toString())) {
-            Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please fill all mandatory fields", Toast.LENGTH_SHORT).show();
             return false;
         }
         return true;
     }
 }
+
